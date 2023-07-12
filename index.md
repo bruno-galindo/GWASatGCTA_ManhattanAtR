@@ -187,7 +187,8 @@ ul {
 
 ## GHap option
 
-The code below was elaborated by Yuri Utsumoniya using the package GHap
+The code below was elaborated by <u>Yuri Tani Utsunomiya</u> using the
+package GHap
 
 1.  First you need to install and load the package GHap
 
