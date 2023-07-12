@@ -132,7 +132,7 @@ manhattan_plot <- ggplot(gwas_results, aes(x = bp, y = neg_log10_p)) +
 print(manhattan_plot)
 ```
 
-![](GWASatGCTA_ManhattanAndQQ_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](index_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 Lets breakdown the code above:
 <style>
@@ -248,7 +248,7 @@ abline(h=(bonf), col="red2")
 legend("topright", col="red2", lwd=2, c("Bonferroni correction"), bty="n")
 ```
 
-![](GWASatGCTA_ManhattanAndQQ_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](index_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 # QQ-plot
 
@@ -276,7 +276,7 @@ library(qqman)
 qq(gwas_results$p, main = "Q-Q plot of GWAS p-values", xlim = c(0, 4),   ylim = c(0, 4), pch = 18, col = "blue4", cex = 1, las = 1)
 ```
 
-![](GWASatGCTA_ManhattanAndQQ_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](index_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 ## QQ-Plots’s manual version
 
@@ -357,7 +357,7 @@ qqplot <- ggplot(plotdata, aes(x = expected, y = observed)) +
 print(qqplot)
 ```
 
-![](GWASatGCTA_ManhattanAndQQ_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](index_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 2.  Plotting using dots with **geom_points** command
 
@@ -375,4 +375,4 @@ qqplot <- ggplot(plotdata, aes(x = expected, y = observed)) +
 print(qqplot)
 ```
 
-![](GWASatGCTA_ManhattanAndQQ_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](index_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
