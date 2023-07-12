@@ -2,7 +2,7 @@
 title: "GWAS"
 author: "BrunoGalindo"
 date: "2023-07-12"
-output: html_document
+output: github_document
 ---
 # GWAS
 
