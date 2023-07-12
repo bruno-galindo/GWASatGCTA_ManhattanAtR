@@ -12,7 +12,7 @@ BrunoGalindo
     are in the same directory and not in a subdirectory.
 3.  Open the command line in your computer as the image below:
 
-<img src="C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/media/image1.png" alt="My Image" width="400" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="image1.png" alt="My Image" width="400" style="display: block; margin-left: auto; margin-right: auto;">
 
 4.  Drive your command line to the directory where you saved your
     extracted folder with gcta using the command cd
