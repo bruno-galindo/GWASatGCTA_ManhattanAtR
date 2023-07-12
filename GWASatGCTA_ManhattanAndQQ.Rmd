@@ -14,21 +14,21 @@ output: github_document
 
 4. Drive your command line to the directory where you saved your extracted folder with gcta using the command cd (<span style="background-color: black; color: hotpink;">pink</span>) and the path to your directory (<span style="background-color: black; color: yellow;">yellow</span>).
 
-<img src="C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/media/image2.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="image2.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
 
 5. The first thing to generate a GRM using the <span style="background-color: black; color: green;">green</span> command below:
 
-<img src="C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/media/image3.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="image3.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
 
 6. The this command will generate three files on the same directory with the extension .grm.bin, .grm.id and .grm.N.bin.
 
 7. The next step is performing the GWAS, to do this you will use the code below:
 
-<img src="C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/media/image4.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="image4.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
 
 8. The code above will generate one file with extension .mlma that look like this:
 
-<img src="C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/media/image5.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="image5.png" alt="My Image" width="700" style="display: block; margin-left: auto; margin-right: auto;">
 
 In this file the columns have this information:
 <style>
