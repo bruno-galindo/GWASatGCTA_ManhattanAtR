@@ -55,7 +55,7 @@ All we could do in GCTA software is done, now we need to use another software to
 ## By hand option
 1. In R read your .mlma file
 ```{r}
-gwas_results <- read.table("C:/Users/galin/OneDrive - University of Guelph/TrainingGenomic/gcta/test.mlma", header = TRUE)
+gwas_results <- read.table("C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/test.mlma", header = TRUE)
 ```
 
 2. To convert the position of the SNP from bp to kbp, and make the x axis easier to read apply the code below:
@@ -65,7 +65,7 @@ gwas_results$bp <- gwas_results$bp1 / 1000
 ```
 
 3. If necessary remove the missing p-values
-```{r}
+```{r eval=FALSE}
 gwas_results <- gwas_results[!is.na(gwas_results$p), ]
 ```
 
@@ -75,7 +75,7 @@ gwas_results$neg_log10_p <- -log10(gwas_results$p)
 ```
 
 5. If you are performing a analysis with all your chromosomes you need to run the code below:
-```{r eval=FALSE, include=FALSE}
+```{r eval=FALSE}
 chrom_order <- unique(gwas_results$chr)
 gwas_results$chr <- factor(gwas_results$chr, levels = chrom_order)
 ```
@@ -138,7 +138,7 @@ library(GHap)
 
 2. Read your data file .mlma in R
 ```{r}
-gwas <- read.table("C:/Users/galin/OneDrive - University of Guelph/TrainingGenomic/gcta/test.mlma", header = TRUE, stringsAsFactors = F)
+gwas <- read.table("C:/Users/galin/OneDrive - University of Guelph/0.Post doc/Tutorials/GWASatGCTA_ManhattanAtR/test.mlma", header = TRUE, stringsAsFactors = F)
 ```
 
 3. Convert your chromosome column in factor
@@ -152,7 +152,7 @@ gwas$logP<- -log10(gwas$p)
 ```
 
 5. If necessary remove the missing data from logp column:
-```{r}
+```{r eval=FALSE}
 rmv<- which(gwas$logP == "NaN")
 if (length(rmv) >=1) {gwas <- gwas[-rmv,]}
 ```
@@ -208,12 +208,16 @@ qq(gwas_results$p, main = "Q-Q plot of GWAS p-values", xlim = c(0, 4),   ylim = 
 This version was taken from <https://danielroelfs.com/blog/how-i-make-qq-plots-using-ggplot/>
 
 1. First you will need to check if you have the packages below and load them.
+
+With this code you will install directly from github repository.
+```{r eval=FALSE}
+devtools::install_github("norment/normentR")
+```
+
 ```{r warning=FALSE, message=FALSE}
-devtools::install_github("norment/normentR") # with this code you will install directly from github repository. 
 library(ggplot2)
 library(tidyverse)
 library(normentR)
-
 ```
 
 2. Pre steps
