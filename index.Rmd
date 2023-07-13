@@ -3,6 +3,7 @@ title: "GWAS"
 author: "BrunoGalindo"
 date: "2023-07-12"
 output: github_document
+bibliography: reference_list.bib
 ---
 # GWAS
 
@@ -129,7 +130,7 @@ ul {
 - **print(manhattan_plot)**: This line prints the plot to the output.
 
 ## GHap option
-The code below was elaborated by <u>Yuri Tani Utsunomiya</u> using the package GHap
+The code below was elaborated by <u>Yuri Tani Utsunomiya</u> using the package GHap [@utsunomiya_ghap_2016]
 
 1. First you need to install and load the package GHap
 ```{r message=FALSE, warning=FALSE}
@@ -279,3 +280,4 @@ qqplot <- ggplot(plotdata, aes(x = expected, y = observed)) +
 print(qqplot)
 ```
 
+## Reference list

@@ -188,7 +188,7 @@ ul {
 ## GHap option
 
 The code below was elaborated by <u>Yuri Tani Utsunomiya</u> using the
-package GHap
+package GHap (Utsunomiya et al. 2016)
 
 1.  First you need to install and load the package GHap
 
@@ -377,3 +377,18 @@ print(qqplot)
 ```
 
 ![](index_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+
+## Reference list
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-utsunomiya_ghap_2016" class="csl-entry">
+
+Utsunomiya, Yuri T., Marco Milanesi, Adam T. H. Utsunomiya, Paolo
+Ajmone-Marsan, and José F. Garcia. 2016. “GHap: An R Package for
+Genome-Wide Haplotyping.” *Bioinformatics* 32 (18): 2861–62.
+<https://doi.org/10.1093/bioinformatics/btw356>.
+
+</div>
+
+</div>
